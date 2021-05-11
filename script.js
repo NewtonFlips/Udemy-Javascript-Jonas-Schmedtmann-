@@ -312,6 +312,7 @@ GOOD LUCK 😀
 
 // NORMAL
 // DATA 1
+/* 
 const scoresDolphins = 96 + 108 + 89;
 const scoresKoalas = 88 + 91 + 110;
 const averageDolphinsScore = scoresDolphins / 3;
@@ -370,3 +371,110 @@ if (
 } else {
   console.log("No team won. So trophy will not be shared");
 }
+ */
+
+// LESSON 11 (Switch Statement)
+/* 
+const day = "thursday";
+
+// when you have to use multiple if else statement, the easier optiom is to use switch statement.
+
+// each case will be compared in strict equality way.
+
+switch (day) {
+  case "monday":
+    console.log("Plan course structure.");
+    console.log("Go to coding meetup.");
+    break; // this break statement will ensure the exit from the statement once any one of the case is matched and that block is executed.
+  case "tuesday":
+    console.log("Prepare theory video.");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples.");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend.");
+    break;
+  default:
+    console.log("Not a valid day");
+}
+ */
+
+// LESSON 12 (Statements and expressions)
+
+// An expression is some something that produce a value
+// A statement is something that does not produce a value such as decalration
+
+// LESSON 13 (Ternary Operator / Conditional Operator)
+
+// Else block is mandatory in case of ternary operator
+/* 
+const age = 23;
+age >= 18
+  ? console.log("Eligible for driving")
+  : console.log("Below the minimum age for driving.");
+ */
+
+//CODING CHALLENGE 4
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+1. Your task is to caluclate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement 😅 (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: 'The bill was 275, the tip was 41.25, and the total value 316.25'
+
+TEST DATA: Test for bill values 275, 40 and 430
+
+HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
+HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
+
+GOOD LUCK 😀
+*/
+
+// DATA 1
+/* 
+const billValue = 275;
+billValue >= 50 && billValue <= 300
+  ? console.log(
+      `The bill was ${billValue}, the tip was ${
+        billValue * 0.15
+      }, and the total value was ${billValue * 1.15}.`
+    )
+  : console.log(
+      `The bill was ${billValue}, the tip was ${
+        billValue * 0.2
+      }, and the total value was ${billValue * 1.2}.`
+    );
+
+// DATA 2
+const billValue2 = 40;
+billValue2 >= 50 && billValue2 <= 300
+  ? console.log(
+      `The bill was ${billValue2}, the tip was ${
+        billValue2 * 0.15
+      }, and the total value was ${billValue2 * 1.15}.`
+    )
+  : console.log(
+      `The bill was ${billValue2}, the tip was ${
+        billValue2 * 0.2
+      }, and the total value was ${billValue2 * 1.2}.`
+    );
+
+// DATA 3
+const billValue3 = 430;
+billValue3 >= 50 && billValue3 <= 300
+  ? console.log(
+      `The bill was ${billValue3}, the tip was ${
+        billValue3 * 0.15
+      }, and the total value was ${billValue3 * 1.15}.`
+    )
+  : console.log(
+      `The bill was ${billValue3}, the tip was ${
+        billValue3 * 0.2
+      }, and the total value was ${billValue3 * 1.2}.`
+    );
+ */
