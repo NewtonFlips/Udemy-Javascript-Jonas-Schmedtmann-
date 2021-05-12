@@ -381,3 +381,96 @@ if (mark.bmi > john.bmi) {
   );
 }
  */
+
+// LOOPS
+// LESSON 13 (For Loop)
+/* 
+// 1. Counter
+// 2. condition to match with. Loop will run as long as condition is true
+// 3. What to do with the counter after each iteration
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Weight lifting set ${rep}.`);
+}
+ */
+
+// LESSON 14 (Looping arrays)
+/* 
+const newton = [
+  "Newton",
+  "Flips",
+  2037 - 1994,
+  "auditor",
+  ["Joey", "Chandler", "Monica"],
+];
+
+for (let i = 0; i < newton.length; i++) {
+  console.log(newton[i]);
+}
+
+// Filling an array with loop
+let typesNewton = [];
+for (let i = 0; i < newton.length; i++) {
+  typesNewton.push(typeof newton[i]);
+}
+
+console.log(typesNewton);
+
+const birthYears = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < birthYears.length; i++) {
+  ages.push(2037 - birthYears[i]);
+}
+
+console.log(ages);
+
+// continue (to skip the current iteration of loop) and break (to exit out of the loop) statements
+
+for (let i = 0; i < newton.length; i++) {
+  if (typeof newton[i] !== "string") {
+    continue;
+  } else {
+    console.log(newton[i]);
+  }
+}
+
+for (let i = 0; i < newton.length; i++) {
+  if (typeof newton[i] !== "string") {
+    break;
+  } else {
+    console.log(newton[i]);
+  }
+}
+*/
+
+// LESSON 15 (The While loops)
+/* 
+let a = 1;
+while (a <= 10) {
+  console.log(a);
+  a++;
+}
+console.log("Loop ends here.");
+ */
+
+// CODING CHALLENGE
+
+/*
+Let's improve Steven's tip calculator even more, this time using loops!
+
+1. Create an array 'bills' containing all 10 test bill values
+2. Create empty arrays for the tips and the totals ('tips' and 'totals')
+3. Use the 'calcTip' function we wrote before (no need to repeat) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
+
+TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+
+HINT: Call calcTip in the loop and use the push method to add values to the tips and totals arrays 😉
+
+4. BONUS: Write a function 'calcAverage' which takes an array called 'arr' as an argument. This function calculates the average of all numbers in the given array. This is a DIFFICULT challenge (we haven't done this before)! Here is how to solve it:
+  4.1. First, you will need to add up all values in the array. To do the addition, start by creating a variable 'sum' that starts at 0. Then loop over the array using a for loop. In each iteration, add the current value to the 'sum' variable. This way, by the end of the loop, you have all values added together
+  4.2. To calculate the average, divide the sum you calculated before by the length of the array (because that's the number of elements)
+  4.3. Call the function with the 'totals' array
+
+GOOD LUCK 😀
+*/
